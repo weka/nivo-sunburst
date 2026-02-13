@@ -1,0 +1,23 @@
+import { SunburstCommonProps, ComputedDatum, DataProps, SunburstCustomLayerProps } from './types';
+export declare const useSunburst: <RawDatum>({ data, id, value, valueFormat, radius, cornerRadius, innerRadius, renderRootNode, colors, colorBy, inheritColorFromParent, childColor, }: {
+    data: DataProps<RawDatum>["data"];
+    id?: DataProps<RawDatum>["id"];
+    value?: DataProps<RawDatum>["value"];
+    valueFormat?: DataProps<RawDatum>["valueFormat"];
+    radius: number;
+    cornerRadius?: SunburstCommonProps<RawDatum>["cornerRadius"];
+    innerRadius?: SunburstCommonProps<RawDatum>["innerRadius"];
+    renderRootNode?: SunburstCommonProps<RawDatum>["renderRootNode"];
+    colors?: SunburstCommonProps<RawDatum>["colors"];
+    colorBy?: SunburstCommonProps<RawDatum>["colorBy"];
+    inheritColorFromParent?: SunburstCommonProps<RawDatum>["inheritColorFromParent"];
+    childColor?: SunburstCommonProps<RawDatum>["childColor"];
+}) => {
+    arcGenerator: import("@nivo/arcs").ArcGenerator;
+    nodes: ComputedDatum<RawDatum>[];
+};
+/**
+ * Memoize the context to pass to custom layers.
+ */
+export declare const useSunburstLayerContext: <RawDatum>({ nodes, arcGenerator, centerX, centerY, radius, }: SunburstCustomLayerProps<RawDatum>) => SunburstCustomLayerProps<RawDatum>;
+//# sourceMappingURL=hooks.d.ts.map
