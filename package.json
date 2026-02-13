@@ -1,6 +1,6 @@
 {
     "name": "@nivo/sunburst",
-    "version": "0.99.1-weka",
+    "version": "0.99.2-weka",
     "license": "MIT",
     "author": {
         "name": "Raphaël Benitte",
@@ -33,6 +33,7 @@
         "@nivo/core": "^0.99.0",
         "@nivo/theming": "^0.99.0",
         "@nivo/tooltip": "^0.99.0",
+        "@react-spring/web": "9.4.5 || ^9.7.2 || ^10.0",
         "@types/d3-hierarchy": "^3.1.7",
         "@types/d3-scale": "^4.0.8",
         "d3-hierarchy": "^3.1.2",
