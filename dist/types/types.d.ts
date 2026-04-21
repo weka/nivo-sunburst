@@ -20,7 +20,7 @@ export interface DataProps<RawDatum> {
     valueFormat?: ValueFormat<number>;
 }
 export interface ChildrenDatum<RawDatum> {
-    children?: Array<RawDatum & ChildrenDatum<RawDatum>>;
+    children?: (RawDatum & ChildrenDatum<RawDatum>)[];
 }
 export interface ComputedDatum<RawDatum> {
     id: DatumId;
